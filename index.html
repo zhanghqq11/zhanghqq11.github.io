@@ -152,33 +152,58 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="hello world-World" class="article article-type-hello world  article-index" itemscope itemprop="blogPost">
+    <article id="前端汇总-font-end" class="article article-type-前端汇总  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/24/World/">第一次练习</a>
+      <a class="article-title" href="/2019/07/22/font-end/">前端知识点</a>
     </h1>
   
 
         
-        <a href="/2019/06/24/World/" class="archive-article-date">
-  	<time datetime="2019-06-24T08:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-24</time>
+        <a href="/2019/07/22/font-end/" class="archive-article-date">
+  	<time datetime="2019-07-22T08:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>大家好我是一个忧郁的男子，这是<a href="https://zhanghqq11.github.io">我的博客</a></p>
-<h1 id="我是一个一级标题"><a href="#我是一个一级标题" class="headerlink" title="我是一个一级标题"></a>我是一个一级标题</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm run build</span><br></pre></td></tr></table></figure>
-<h2 id="我是一个二级标题"><a href="#我是一个二级标题" class="headerlink" title="我是一个二级标题"></a>我是一个二级标题</h2><p>我是一个引用</p>
-<blockquote>
-<p>这是引用</p>
-</blockquote>
-<h3 id="我是一个三级标题"><a href="#我是一个三级标题" class="headerlink" title="我是一个三级标题"></a>我是一个三级标题</h3><h4 id="我是四级标题"><a href="#我是四级标题" class="headerlink" title="我是四级标题"></a>我是四级标题</h4>
+        <h1 id="css"><a href="#css" class="headerlink" title="css"></a>css</h1><h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><h3 id="1-标准模型"><a href="#1-标准模型" class="headerlink" title="1.标准模型"></a>1.标准模型</h3><p>IE模型和标准模型唯一的区别是内容计算方式的不同，如下图所示：</p>
+<p><img src="https://segmentfault.com/img/remote/1460000013069520" alt="图2.IE模型宽度计算示意图"></p>
+<p><strong>IE模型元素宽度width=content+padding</strong>，高度计算相同</p>
+<p><img src="https://segmentfault.com/img/remote/1460000013069521" alt="图3.标准模型计算示意图"></p>
+<p><strong>标准模型元素宽度width=content</strong>，高度计算相同</p>
+<p>引用自：<a href="https://segmentfault.com/a/1190000013069516" target="_blank" rel="noopener">https://segmentfault.com/a/1190000013069516</a> 作者;kain</p>
+<h3 id="2-flex"><a href="#2-flex" class="headerlink" title="2.flex"></a>2.flex</h3><p>后期补充</p>
+<h3 id="3-css单位"><a href="#3-css单位" class="headerlink" title="3 css单位"></a>3 css单位</h3><p>像素 (px) 是一种绝对单位（<strong>absolute units</strong>）<strong>，</strong> 因为无论其他相关的设置怎么变化，像素指定的值是不会变化的。其他的绝对单位如下：</p>
+<ul>
+<li><code>mm</code>, <code>cm</code>, <code>in</code>: 毫米（Millimeters），厘米（centimeters），英寸（inches）</li>
+<li><code>pt</code>, <code>pc</code>: 点（Points (1/72 of an inch)）， 十二点活字（ picas (12 points.)）</li>
+</ul>
+<p>除了px之外，你很可能都不怎么使用其他的单位。</p>
+<p>也有相对单位，他们是相对于当前元素的字号（ <code>font-size</code> ）或者视口（<a href="https://developer.mozilla.org/en-US/docs/Glossary/viewport" target="_blank" rel="noopener">viewport</a> ）尺寸。</p>
+<ul>
+<li><code>em</code>:1em与当前元素的字体大小相同（更具体地说，一个大写字母M的宽度）。CSS样式被应用之前，浏览器给网页设置的默认基础字体大小是16像素，这意味着对一个元素来说1em的计算值默认为16像素。但是要小心—em单位是会继承父元素的字体大小，所以如果在父元素上设置了不同的字体大小，em的像素值就会变得复杂。现在不要过于担心这个问题，我们将在后面的文章和模块中更详细地介绍继承和字体大小设置。<strong>em是Web开发中最常用的相对单位</strong>。</li>
+<li><code>ex</code>, <code>ch</code>: 分别是小写x的高度和数字0的宽度。这些并不像em那样被普遍使用或很好地被支持。</li>
+<li><code>rem</code>: REM（root em）和em以同样的方式工作，但它总是等于默认基础字体大小的尺寸；继承的字体大小将不起作用，所以这听起来像一个比em更好的选择，虽然在旧版本的IE上不被支持（查看关于跨浏览器支持 <a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS" target="_blank" rel="noopener">Debugging CSS</a>.)</li>
+<li><code>vw</code>, <code>vh</code>: 分别是视口宽度的1/100和视口高度的1/100，其次，它不像rem那样被广泛支持。</li>
+</ul>
+<p>使用相对单位是非常有用的-你可以相对于你的字体或视口大小来调整HTML元素的大小，这意味着，假设整个网站上的文本大小被视力障碍用户调整为原来的两倍，而网站的布局仍将保持正确。</p>
+<h3 id="4-css-选择器"><a href="#4-css-选择器" class="headerlink" title="4 css 选择器"></a>4 css 选择器</h3><p>Css选择器优先排序</p>
+<p>4个等级的定义如下： 第一等：代表内联样式，如: style=””，权值为1000。<br>第二等：代表ID选择器，如：#content，权值为100。<br>第三等：代表类，伪类和属性选择器，如.content，权值为10。<br>第四等：代表类型选择器和伪元素选择器，如div p，权值为1。</p>
+<p>选择器的优先级 1.最高优先级是 (直接在标签中的设置样式，假设级别为1000)</p>
+<p>如&lt;div style=”color:Red”&gt;</p>
+<p>2.次优先级是（ID选择器 ,假设级别为100）   </p>
+<p>#myDiv{color:Red;}</p>
+<p>3.其次优先级是（类选择器，假设级别为10） </p>
+<p>.divClass{color:Red;}</p>
+<p>4.最后优先级是 （标签选择器，假设级别是 1）<br>div{color:Red;}</p>
+<p>5.那么后代选择器的优先级就可以计算了啊<br>比如 .divClass  span { color:Red;}   优先级别就是：10+1=11</p>
+<h3 id="5-bfc-清除浮动"><a href="#5-bfc-清除浮动" class="headerlink" title="5 bfc 清除浮动"></a>5 bfc 清除浮动</h3>
       
 
       
@@ -191,7 +216,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端汇总</a>
         		</li>
       		
 		</ul>
@@ -201,7 +226,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/06/24/World/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/07/22/font-end/">展开全文 >></a>
         </p>
       
 
@@ -317,32 +342,33 @@
 
 
   
-    <article id="post-张翰奇爱李丽莎一生一世" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="hello world-World" class="article article-type-hello world  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/24/张翰奇爱李丽莎一生一世/">张翰奇爱李丽莎一生一世</a>
+      <a class="article-title" href="/2019/06/24/World/">第一次练习</a>
     </h1>
   
 
         
-        <a href="/2019/03/24/张翰奇爱李丽莎一生一世/" class="archive-article-date">
-  	<time datetime="2019-03-24T11:28:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-24</time>
+        <a href="/2019/06/24/World/" class="archive-article-date">
+  	<time datetime="2019-06-24T08:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是一篇给李丽莎示爱并且炫耀的博客</p>
-<h1 id="张翰奇最爱李丽莎啦"><a href="#张翰奇最爱李丽莎啦" class="headerlink" title="张翰奇最爱李丽莎啦"></a>张翰奇最爱李丽莎啦</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">爱丽莎真的太好啦</span><br></pre></td></tr></table></figure>
-<h2 id="丽莎宝宝我爱你哟"><a href="#丽莎宝宝我爱你哟" class="headerlink" title="丽莎宝宝我爱你哟"></a>丽莎宝宝我爱你哟</h2><blockquote>
-<p>丽莎宝宝做的汤真好喝呀，我要去喝啦</p>
+        <p>大家好我是一个忧郁的男子，这是<a href="https://zhanghqq11.github.io">我的博客</a></p>
+<h1 id="我是一个一级标题"><a href="#我是一个一级标题" class="headerlink" title="我是一个一级标题"></a>我是一个一级标题</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm run build</span><br></pre></td></tr></table></figure>
+<h2 id="我是一个二级标题"><a href="#我是一个二级标题" class="headerlink" title="我是一个二级标题"></a>我是一个二级标题</h2><p>我是一个引用</p>
+<blockquote>
+<p>这是引用</p>
 </blockquote>
-
+<h3 id="我是一个三级标题"><a href="#我是一个三级标题" class="headerlink" title="我是一个三级标题"></a>我是一个三级标题</h3><h4 id="我是四级标题"><a href="#我是四级标题" class="headerlink" title="我是四级标题"></a>我是四级标题</h4>
       
 
       
@@ -350,11 +376,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/24/张翰奇爱李丽莎一生一世/">展开全文 >></a>
+          <a class="article-more-a" href="/2019/06/24/World/">展开全文 >></a>
         </p>
       
 
@@ -478,6 +515,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">前端汇总</a>
               </li>
             
             <div class="clearfix"></div>
