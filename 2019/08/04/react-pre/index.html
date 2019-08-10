@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="一枚忧郁男子的博客">
 <meta property="og:description" content="React部分的学习1前言前端的三大框架都是相互模仿的，学习三大框架的使用虽然不是必须，但是逐步理解所有的三大框架的设计理念以及源码肯定可以有效的帮助前端猿进阶。所以接下来，先了解一下三大框架的设计理念吧。 1.Vue与React之间的对比（1）模块化模块化是从代码的角度来进行分析的：把一些可复用的的代码，抽离为单个的模块。  模块化我的理解是：把整体一部分功能的代码切割成一个模块，就好像字典中以">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-04T15:21:26.682Z">
+<meta property="og:updated_time" content="2019-08-06T15:24:21.675Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="熟悉Vue的React菜鸟级学习（一）">
 <meta name="twitter:description" content="React部分的学习1前言前端的三大框架都是相互模仿的，学习三大框架的使用虽然不是必须，但是逐步理解所有的三大框架的设计理念以及源码肯定可以有效的帮助前端猿进阶。所以接下来，先了解一下三大框架的设计理念吧。 1.Vue与React之间的对比（1）模块化模块化是从代码的角度来进行分析的：把一些可复用的的代码，抽离为单个的模块。  模块化我的理解是：把整体一部分功能的代码切割成一个模块，就好像字典中以">
@@ -196,7 +196,15 @@
 <li>数据状态和配置参数的改变都会影响到组件的显示形态。当数据变化的时候，组件的显示需要更新。所以组件化模式能提供一种高效的自动化地帮我们更新页面。降低了代码的复杂度，带来更好的可维护性。</li>
 <li>为什么要使用组件化开发：前端组件化开发之后。可以很大程度的降低系统各个功能的耦合性，并且提高了功能内部的聚合性。这对前端工程化以及降低代码的维护难度，是有很大帮助的</li>
 </ol>
-<h3 id="（3）组件化的好处"><a href="#（3）组件化的好处" class="headerlink" title="（3）组件化的好处"></a>（3）组件化的好处</h3><p>随着项目规模的增大，手里的组件越来越多，</p>
+<h3 id="（3）组件化的好处"><a href="#（3）组件化的好处" class="headerlink" title="（3）组件化的好处"></a>（3）组件化的好处</h3><p>随着项目规模的增大，手里的组件越来越多：很方便就能把现有的组件，拼接为一个完整的页面；</p>
+<h3 id="（4）Vue是如何实现组件化的"><a href="#（4）Vue是如何实现组件化的" class="headerlink" title="（4）Vue是如何实现组件化的"></a>（4）Vue是如何实现组件化的</h3><p>webpack编译后通过<strong>.vue</strong>文件，来创建对应的组件</p>
+<p>vue实例化一个组件可以分成三步</p>
+<ol>
+<li>使用extend定义(构造)组件</li>
+<li>使用component注册组件</li>
+<li>在初始化app实例的过程中，渲染组件。</li>
+</ol>
+<h3 id="（5-React是如何实现组件化的"><a href="#（5-React是如何实现组件化的" class="headerlink" title="（5) React是如何实现组件化的"></a>（5) React是如何实现组件化的</h3><p>在React中</p>
 
       
 
@@ -300,6 +308,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/08/10/node.js菜鸟级练习（一）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
     <a href="/2019/07/22/font-end/" id="article-nav-older" class="article-nav-link-wrap">

@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://zhanghqq11.github.io">
-  <title>Archives | 一枚忧郁男子的博客</title>
+  <title>一枚忧郁男子的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="node.js菜鸟级练习（一）node是什么node.js是服务器端的开发语言，有些萌新就很疑惑，为什么js也可以做后端呢？ Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.编程语言都有解释器，node.js就是一个很聪明的大佬，把JavaScript的解释器这个解释是c++实现的（v8）放到了服务器，">
+<meta property="og:type" content="article">
 <meta property="og:title" content="一枚忧郁男子的博客">
-<meta property="og:url" content="https://zhanghqq11.github.io/archives/index.html">
+<meta property="og:url" content="https://zhanghqq11.github.io/2019/08/10/node.js菜鸟级练习（一）/index.html">
 <meta property="og:site_name" content="一枚忧郁男子的博客">
+<meta property="og:description" content="node.js菜鸟级练习（一）node是什么node.js是服务器端的开发语言，有些萌新就很疑惑，为什么js也可以做后端呢？ Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.编程语言都有解释器，node.js就是一个很聪明的大佬，把JavaScript的解释器这个解释是c++实现的（v8）放到了服务器，">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-10T13:44:06.531Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一枚忧郁男子的博客">
+<meta name="twitter:description" content="node.js菜鸟级练习（一）node是什么node.js是服务器端的开发语言，有些萌新就很疑惑，为什么js也可以做后端呢？ Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine.编程语言都有解释器，node.js就是一个很聪明的大佬，把JavaScript的解释器这个解释是c++实现的（v8）放到了服务器，">
   
     <link rel="alternative" href="/atom.xml" title="一枚忧郁男子的博客" type="application/atom+xml">
   
@@ -150,195 +154,162 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-node.js菜鸟级练习（一）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="node-js菜鸟级练习（一）"><a href="#node-js菜鸟级练习（一）" class="headerlink" title="node.js菜鸟级练习（一）"></a>node.js菜鸟级练习（一）</h1><h2 id="node是什么"><a href="#node是什么" class="headerlink" title="node是什么"></a>node是什么</h2><p>node.js是服务器端的开发语言，有些萌新就很疑惑，为什么js也可以做后端呢？</p>
+<h5 id="Node-js®-is-a-JavaScript-runtime-built-on-Chrome’s-V8-JavaScript-engine"><a href="#Node-js®-is-a-JavaScript-runtime-built-on-Chrome’s-V8-JavaScript-engine" class="headerlink" title="Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine."></a>Node.js® is a JavaScript runtime built on <a href="https://v8.dev/" target="_blank" rel="noopener">Chrome’s V8 JavaScript engine</a>.</h5><p>编程语言都有解释器，node.js就是一个很聪明的大佬，把JavaScript的解释器这个解释是c++实现的（v8）放到了服务器，并且包装一些服务器级别的操作api（例如文件的读写，网络服务器的构建，网络通信，http服务器，等处理。。。），从而使JavaScript这种脚本语言可以作为服务器端的语言来使用。</p>
+<h5 id="Node-js®-uses-an-event-driven-non-blocking-I-O-model-that-makes-it-lightweight-and-efficient"><a href="#Node-js®-uses-an-event-driven-non-blocking-I-O-model-that-makes-it-lightweight-and-efficient" class="headerlink" title="Node.js® uses an event driven,non-blocking I/O model that makes it lightweight and efficient"></a>Node.js® uses an event driven,non-blocking I/O model that makes it lightweight and efficient</h5><ol>
+<li>事件驱动</li>
+<li>非阻塞I/O模型（异步）</li>
+<li>轻量和高校</li>
+</ol>
+<h5 id="Node-js®-package-ecosystem-npm-is-the-larget-ecosystem-of-open-source-liraries-in-the-world"><a href="#Node-js®-package-ecosystem-npm-is-the-larget-ecosystem-of-open-source-liraries-in-the-world" class="headerlink" title="Node.js® package ecosystem, npm is the larget ecosystem of open source liraries in the world"></a>Node.js® package ecosystem, npm is the larget ecosystem of open source liraries in the world</h5><p>npm是最大的开源包生态系统，所以大部分js相关的包都在npm上，开发人员可以方便的下载使用。</p>
+<h2 id="代码模块"><a href="#代码模块" class="headerlink" title="代码模块"></a>代码模块</h2><p>参考：JavaScript 标准参考教程（alpha）<a href="http://javascript.ruanyifeng.com/" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/</a> </p>
+<p>fs模块：参考<a href="http://javascript.ruanyifeng.com/nodejs/fs.html#toc0" target="_blank" rel="noopener">http://javascript.ruanyifeng.com/nodejs/fs.html#toc0</a></p>
+<h2 id="node-简单的总结"><a href="#node-简单的总结" class="headerlink" title="node 简单的总结"></a>node 简单的总结</h2><p>Node.js是什么</p>
+<ul>
+<li>node.js是JavaScript的一个runtime（运行时)，他是一个平台。</li>
+</ul>
+<p>Node.js需要注意的问题</p>
+<ul>
+<li>没有dom，没有bom不是基于浏览器的</li>
+<li>node.js中可以使用EcmaScript的语法以及一些包装好的模块（服务器级别的api）</li>
+<li>这些api包括一些：操作文件的能力、http服务器的能力</li>
+</ul>
+<h2 id="http模块的菜鸟级入门"><a href="#http模块的菜鸟级入门" class="headerlink" title="http模块的菜鸟级入门"></a>http模块的菜鸟级入门</h2><p>创建一个超级简单的Server,完成一个简单的路由操作(根据不同路径返回不同的数据)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 加载模块</span></span><br><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1. 创建 server</span></span><br><span class="line"><span class="keyword">const</span> server = http.createServer()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2. 监听 request 请求时间，设置请求处理函数</span></span><br><span class="line">server.on(<span class="string">'request'</span>,<span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'请求的路径是'</span> + req.url)</span><br><span class="line">    res.write(<span class="string">'hello'</span>)</span><br><span class="line">    res.write(<span class="string">' world'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment">//必须要end才可以</span></span><br><span class="line">    res.end()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">server.listen(<span class="number">5000</span>)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/10/node.js菜鸟级练习（一）/" class="archive-article-date">
-  	<time datetime="2019-08-10T11:47:41.906Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-10</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://zhanghqq11.github.io/2019/08/10/node.js菜鸟级练习（一）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-react pre study">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/04/react-pre/" class="archive-article-date">
-  	<time datetime="2019-08-04T08:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/04/react-pre/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">熟悉Vue的React菜鸟级学习（一）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/04/react-pre/">熟悉Vue的React菜鸟级学习（一）</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">React</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-前端汇总">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/22/font-end/" class="archive-article-date">
-  	<time datetime="2019-07-22T08:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/22/font-end/">前端知识点</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">前端汇总</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-hello world">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/24/World/" class="archive-article-date">
-  	<time datetime="2019-06-24T08:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/24/World/">第一次练习</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-hello world">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/06/24/prac1/" class="archive-article-date">
-  	<time datetime="2019-06-24T08:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/06/24/prac1/">第一次练习</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -361,8 +332,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
